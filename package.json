@@ -17,9 +17,13 @@
   "author": "Ashutosh Tiwari",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^9.3.0",
     "@types/node": "^20.12.12",
+    "eslint": "9.x",
+    "globals": "^15.2.0",
     "nodemon": "^3.1.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.9.0"
   }
 }
