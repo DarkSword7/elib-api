@@ -52,7 +52,7 @@ const createUser = async (req: Request, res: Response, next: NextFunction) => {
     });
 
     // Send the response
-    res.json({
+    res.status(201).json({
       accessToken: token,
     });
   } catch (error) {
@@ -60,4 +60,10 @@ const createUser = async (req: Request, res: Response, next: NextFunction) => {
   }
 };
 
-export { createUser };
+const loginUser = async (req: Request, res: Response, next: NextFunction) => {
+  res.json({
+    message: "Login successful!",
+  });
+};
+
+export { createUser, loginUser };
