@@ -30,7 +30,9 @@
     "typescript-eslint": "^7.9.0"
   },
   "dependencies": {
+    "@types/http-errors": "^2.0.4",
     "express": "^4.19.2",
+    "http-errors": "^2.0.0",
     "mongoose": "^8.4.0"
   }
 }

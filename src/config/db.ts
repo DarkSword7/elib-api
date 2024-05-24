@@ -13,8 +13,8 @@ const connectDB = async () => {
     });
 
     await mongoose.connect(config.mongoURI as string);
-  } catch (error: any) {
-    console.error(`Error: ${error.message}`);
+  } catch (error) {
+    console.error(`Error in connecting to database: `, error);
     process.exit(1);
   }
 };
