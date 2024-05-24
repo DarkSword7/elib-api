@@ -20,6 +20,6 @@ const userSchema = new mongoose.Schema<User>(
   { timestamps: true }
 );
 
-const User = mongoose.model("User", userSchema);
+const User = mongoose.model<User>("User", userSchema);
 
 export default User;
