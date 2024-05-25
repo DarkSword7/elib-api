@@ -5,6 +5,7 @@ import {
   listBooks,
   getSingleBook,
   updateBook,
+  deleteBook,
 } from "./bookController";
 import multer from "multer";
 import authenticate from "../middlewares/authenticate";
@@ -52,5 +53,7 @@ bookRouter.patch(
 bookRouter.get("/", listBooks);
 
 bookRouter.get("/:bookId", getSingleBook);
+
+bookRouter.delete("/:bookId", authenticate, deleteBook);
 
 export default bookRouter;
