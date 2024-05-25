@@ -154,7 +154,11 @@ const listBooks = async (req: Request, res: Response, next: NextFunction) => {
   }
 };
 
-const listSingle = async (req: Request, res: Response, next: NextFunction) => {
+const getSingleBook = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
   const bookId = req.params.bookId;
   try {
     const book = await bookModel.findOne({ _id: bookId });
@@ -167,4 +171,4 @@ const listSingle = async (req: Request, res: Response, next: NextFunction) => {
   }
 };
 
-export { createBook, updateBook, listBooks, listSingle };
+export { createBook, updateBook, listBooks, getSingleBook };

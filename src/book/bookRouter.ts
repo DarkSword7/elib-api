@@ -3,7 +3,7 @@ import { Router } from "express";
 import {
   createBook,
   listBooks,
-  listSingle,
+  getSingleBook,
   updateBook,
 } from "./bookController";
 import multer from "multer";
@@ -51,6 +51,6 @@ bookRouter.patch(
 
 bookRouter.get("/", listBooks);
 
-bookRouter.get("/:bookId", listSingle);
+bookRouter.get("/:bookId", getSingleBook);
 
 export default bookRouter;
