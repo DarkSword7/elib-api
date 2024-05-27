@@ -22,6 +22,7 @@ const bookSchema = new mongoose.Schema<Book>(
     },
     desc: {
       type: String,
+      required: true,
     },
     file: {
       type: String,
